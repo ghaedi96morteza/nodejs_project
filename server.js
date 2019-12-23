@@ -28,15 +28,15 @@ app.post('/login', async (request, response) => {
     let login_username = request.body.login_username;
     let login_password = request.body.login_password;
     const db = new DataBase(config);
-    let sql_query = 'call selectfromusers (?)';
+    let sql_query = 'select * from users where username = ?';
     let login = await db.query(sql_query, [login_username]);
-    console.log(login[0].length);
-    console.log(login[0]);
-    if (login[0].length > 0) {
+    if (login.length > 0) {
+        console.log(login);
         const match = await bcrypt.compare(login_password, login[0].password);
         if (match) {
+            request.session.userrole = login[0].role;
             request.session.loggedin = true;
-            request.session.username = login_username;
+            request.session.name = login[0].fullname;
             response.redirect('/home');
         } else {
             response.send("نام کاربری و (یا) رمز شما اشتباه است.");
@@ -51,27 +51,32 @@ app.post('/login', async (request, response) => {
 });
 
 app.post('/signup', async (request, response) => {
+    let signup_fullname = request.body.signup_fullname;
     let signup_username = request.body.signup_username;
     let signup_password = request.body.signup_password;
     let signup_cpassword = request.body.signup_cpassword;
+    let signup_userrole = request.body.userstype;
+
 
     const db = new DataBase(config);
-    let sql_query = 'call InsertIntoUsers (?,?)';
+    let sql_query = 'call insertintousers (?,?,?,?)';
 
     if (signup_password == signup_cpassword) {
         let result = await db.query('SELECT username FROM users WHERE username=?', [signup_username]);
         if (result.length > 0) {
             response.send("نام کاربری تکراری است");
-        } else {
-            bcrypt.genSalt(10, (err, salt) => {
-                bcrypt.hash(signup_password, salt, (err, hash) => {
-                    db.query(sql_query, [signup_username, hash]);
-                    console.log(hash);
+        }
+        else {
+            bcrypt.genSalt(10, async (err, salt) => {
+                bcrypt.hash(signup_password, salt, async (err, hash) => {
+                    await db.query(sql_query, [signup_username, hash,signup_fullname,signup_userrole]);
+
                 });
             });
             response.send('عملیات ثبت نام با موفقیت انجام شد.');
         }
-    } else {
+    }
+    else {
         response.send("رمز و تأیید رمز همسان نیستند");
         response.end();
     }
@@ -88,10 +93,12 @@ app.get('/home', (req, res) => {
     if (req.session.loggedin == true) {
         res.render('home_page.html', {
             title: 'صفحه اصلی',
-            content: req.session.username,
+            name: req.session.name,
+            role : req.session.userrole
         });
 
-    } else {
+    }
+    else {
         res.redirect('/login');
     }
 });

@@ -302,6 +302,17 @@ iframe {
     z-index: 1;
     margin-bottom: 10px;
 }
+.selectusertype{
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    margin-bottom: 10px;
+    font-family: b Nazanin;
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #666666;
+}
 
 .input100 {
     font-family: b Nazanin;

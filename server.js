@@ -10,7 +10,7 @@ app.set('view engine', 'hbs');
 app.engine('html', require('hbs').__express);
 app.use(express.static('public'));
 hbs.registerPartials('views/partial');
-app.use(bodyparser.urlencoded({extended: true}));
+app.use(bodyparser.urlencoded({ extended: true }));
 app.use(session({
     secret: 'secret',
     resave: true,
@@ -24,7 +24,7 @@ const config = {
     database: 'nodejs_project'
 };
 
-app.post('/login', async (request, response) => {
+app.post('/login', async(request, response) => {
     let login_username = request.body.login_username;
     let login_password = request.body.login_password;
     const db = new DataBase(config);
@@ -50,7 +50,7 @@ app.post('/login', async (request, response) => {
     response.end();
 });
 
-app.post('/signup', async (request, response) => {
+app.post('/signup', async(request, response) => {
     let signup_fullname = request.body.signup_fullname;
     let signup_username = request.body.signup_username;
     let signup_password = request.body.signup_password;
@@ -65,18 +65,16 @@ app.post('/signup', async (request, response) => {
         let result = await db.query('SELECT username FROM users WHERE username=?', [signup_username]);
         if (result.length > 0) {
             response.send("نام کاربری تکراری است");
-        }
-        else {
-            bcrypt.genSalt(10, async (err, salt) => {
-                bcrypt.hash(signup_password, salt, async (err, hash) => {
-                    await db.query(sql_query, [signup_username, hash,signup_fullname,signup_userrole]);
+        } else {
+            bcrypt.genSalt(10, async(err, salt) => {
+                bcrypt.hash(signup_password, salt, async(err, hash) => {
+                    await db.query(sql_query, [signup_username, hash, signup_fullname, signup_userrole]);
 
                 });
             });
             response.send('عملیات ثبت نام با موفقیت انجام شد.');
         }
-    }
-    else {
+    } else {
         response.send("رمز و تأیید رمز همسان نیستند");
         response.end();
     }
@@ -94,11 +92,10 @@ app.get('/home', (req, res) => {
         res.render('home_page.html', {
             title: 'صفحه اصلی',
             name: req.session.name,
-            role : req.session.userrole
+            role: req.session.userrole
         });
 
-    }
-    else {
+    } else {
         res.redirect('/login');
     }
 });
@@ -111,6 +108,20 @@ app.get('/login', (req, res) => {
 app.get('/signup', (req, res) => {
     res.render('signup_page.html', {
         title: 'صفحه ثبت نام'
+    });
+
+});
+
+app.get('/post', (req, res) => {
+    res.render('post.html', {
+        title: 'صفحه ثبت پست'
+    });
+
+});
+
+app.get('/comments', (req, res) => {
+    res.render('comments.html', {
+        title: 'صفحه ثبت نظر'
     });
 
 });

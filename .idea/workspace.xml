@@ -10,8 +10,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+        <option value="Less File" />
       </list>
     </option>
   </component>
@@ -27,6 +29,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="Less" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -63,6 +66,7 @@
       <workItem from="1577690951680" duration="73000" />
       <workItem from="1577694213237" duration="2179000" />
       <workItem from="1577696429018" duration="41000" />
+      <workItem from="1577699921206" duration="2390000" />
     </task>
     <servers />
   </component>

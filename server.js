@@ -137,6 +137,13 @@ app.get('/post', (req, res) => {
 
 });
 
+app.get('/posts', (req, res) => {
+    res.render('posts.html', {
+        title: 'صفحه ثبت پست'
+    });
+
+});
+
 app.get('/comments', (req, res) => {
     res.render('comments.html', {
         title: 'صفحه ثبت نظر'

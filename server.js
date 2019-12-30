@@ -30,7 +30,6 @@ app.post('/login', async(request, response) => {
     let login_username = request.body.login_username;
     let login_password = request.body.login_password;
     const db = new DataBase(config);
-    let sql_query = 'select * from users where username = ?';
     let login = await db.query(sql_query_select, [login_username]);
     if (login[0].length > 0) {
         const match = await bcrypt.compare(login_password, login[0][0].password);
@@ -38,8 +37,14 @@ app.post('/login', async(request, response) => {
             request.session.userrole = login[0][0].role;
             request.session.loggedin = true;
             request.session.name = login[0][0].fullname;
-            response.redirect('/home');
-        } else {
+            if(login[0][0].role=='استاد'){
+                response.redirect('/inst');
+            }
+            else if (login[0][0].role=='دانشجو'){
+                response.redirect('/std');
+            }
+
+       } else {
             response.send("نام کاربری و (یا) رمز شما اشتباه است.");
             response.end();
         }
@@ -75,6 +80,7 @@ app.post('/signup', async(request, response) => {
         response.send("رمز و تأیید رمز همسان نیستند");
         response.end();
     }
+    db.close();
     response.end();
 });
 
@@ -82,18 +88,34 @@ app.get('/', (req, res) => {
     res.redirect('/home');
 });
 
-app.get('/home', (req, res) => {
-
-    if (req.session.loggedin == true) {
-        res.render('home_page.html', {
-            title: 'صفحه اصلی',
+app.get('/inst',(req,res)=>{
+    if (req.session.loggedin == true && req.session.userrole=='استاد') {
+        res.render('inst_page.html',{
+            title : 'صفحه استاد',
             name: req.session.name,
-            role: req.session.userrole
         });
-
-    } else {
+    }
+    else {
         res.redirect('/login');
     }
+});
+
+app.get('/std',(req,res)=>{
+    if (req.session.loggedin == true && req.session.userrole=='دانشجو') {
+        res.render('std_page.html',{
+            title : 'صفحه دانشجو',
+            name: req.session.name,
+        });
+    }
+    else {
+        res.redirect('/login');
+    }
+});
+app.get('/home', (req, res) => {
+        res.render('home_page.html', {
+            title: 'صفحه اصلی',
+        });
+
 });
 app.get('/login', (req, res) => {
     res.render('login_page.html', {

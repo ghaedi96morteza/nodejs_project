@@ -23,8 +23,9 @@ const config = {
     password: '',
     database: 'nodejs_project'
 };
-let sql_query_select = "call SelectFromUsers (?)";
-let sql_query_insert = 'call InsertIntoUsers (?,?,?,?)';
+let sql_query_select = "call selectfromusers (?)";
+let sql_query_insert = 'call insertintousers (?,?,?,?)';
+
 
 app.post('/login', async(request, response) => {
     let login_username = request.body.login_username;
@@ -37,14 +38,15 @@ app.post('/login', async(request, response) => {
             request.session.userrole = login[0][0].role;
             request.session.loggedin = true;
             request.session.name = login[0][0].fullname;
+            request.session.username = login[0][0].username;
             if(login[0][0].role=='استاد'){
-                response.redirect('/inst');
+                response.redirect('/inst_page');
             }
             else if (login[0][0].role=='دانشجو'){
-                response.redirect('/std');
+                response.redirect('/std_page');
             }
 
-       } else {
+        } else {
             response.send("نام کاربری و (یا) رمز شما اشتباه است.");
             response.end();
         }
@@ -67,87 +69,66 @@ app.post('/signup', async(request, response) => {
         let result = await db.query(sql_query_select, [signup_username]);
         if (result[0].length > 0) {
             response.send("نام کاربری تکراری است");
-        } else {
+        }
+        else {
             bcrypt.genSalt(10, async(err, salt) => {
                 bcrypt.hash(signup_password, salt, async(err, hash) => {
                     await db.query(sql_query_insert, [signup_username, hash, signup_fullname, signup_userrole]);
-
+                    db.close();
                 });
             });
+
             response.send('عملیات ثبت نام با موفقیت انجام شد.');
         }
-    } else {
+    }
+    else {
         response.send("رمز و تأیید رمز همسان نیستند");
         response.end();
     }
-    db.close();
     response.end();
 });
-
 app.get('/', (req, res) => {
     res.redirect('/home');
 });
-
-app.get('/inst',(req,res)=>{
-    if (req.session.loggedin == true && req.session.userrole=='استاد') {
-        res.render('inst_page.html',{
-            title : 'صفحه استاد',
-            name: req.session.name,
-        });
-    }
-    else {
-        res.redirect('/login');
-    }
-});
-
-app.get('/std',(req,res)=>{
-    if (req.session.loggedin == true && req.session.userrole=='دانشجو') {
-        res.render('std_page.html',{
-            title : 'صفحه دانشجو',
-            name: req.session.name,
-        });
-    }
-    else {
-        res.redirect('/login');
-    }
-});
+// home page *******************************
 app.get('/home', (req, res) => {
         res.render('home_page.html', {
             title: 'صفحه اصلی',
         });
-
 });
+//-----------------------------------------
+
+// login page *******************************
 app.get('/login', (req, res) => {
     res.render('login_page.html', {
         title: 'صفحه ورود'
     });
-
 });
+//--------------------------------
+
+// signup page *******************************
 app.get('/signup', (req, res) => {
     res.render('signup_page.html', {
         title: 'صفحه ثبت نام'
     });
-
 });
+//-----------------------------------------
 
 app.get('/post', (req, res) => {
     res.render('post.html', {
         title: 'صفحه ثبت پست'
     });
-
 });
 
 app.get('/posts', (req, res) => {
     res.render('posts.html', {
         title: 'صفحه ثبت پست'
     });
-
 });
 
 app.get('/comments', (req, res) => {
     res.render('comments.html', {
         title: 'صفحه ثبت نظر'
     });
-
 });
-app.listen(880);
+app.listen(80);

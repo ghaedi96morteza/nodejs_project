@@ -1,41 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2df42b67-27bc-4d2c-a646-9667d24b6cb2" name="Default Changelist" comment="" />
+    <list default="true" id="41eb3df1-21e2-46a3-a29c-5886a1dd0c37" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/nodejs_project.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Project.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/bcrypt/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bcrypt/.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/bcrypt/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bcrypt/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/bcrypt/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bcrypt/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/bcrypt/ISSUE_TEMPLATE.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bcrypt/ISSUE_TEMPLATE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/bcrypt/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bcrypt/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/bcrypt/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bcrypt/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/bcrypt/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bcrypt/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/bcrypt/bcrypt.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bcrypt/bcrypt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/bcrypt/binding.gyp" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bcrypt/binding.gyp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/bcrypt/examples/async_compare.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bcrypt/examples/async_compare.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/bcrypt/examples/forever_gen_salt.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bcrypt/examples/forever_gen_salt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/bcrypt/lib/binding/bcrypt_lib.node" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bcrypt/lib/binding/bcrypt_lib.node" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/bcrypt/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bcrypt/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/bcrypt/promises.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bcrypt/promises.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/bcrypt/src/bcrypt.cc" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bcrypt/src/bcrypt.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/bcrypt/src/bcrypt_node.cc" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bcrypt/src/bcrypt_node.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/bcrypt/src/blowfish.cc" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bcrypt/src/blowfish.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/bcrypt/src/node_blf.h" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bcrypt/src/node_blf.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/posts.less" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/posts.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/post.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/posts.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/posts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/comments.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/home_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/home_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/inst_page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/login_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/login_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/post.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/posts.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/std_page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/test.html" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="nodejs_project" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="JavaScript File" />
-        <option value="CSS File" />
-        <option value="Less File" />
       </list>
     </option>
   </component>
-  <component name="ProjectId" id="1VOmC30Y31X5PtqFkeUFmDZlKxr" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1VqeZyn9AgkjGYpajQbwTcSoc1l" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="ToolWindowJob Explorer.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="list.type.of.created.stylesheet" value="Less" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\MGh\Desktop\Shahreza Uni\Special Topics 1\NodeJS\Project" />
-    </key>
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -54,19 +112,12 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2df42b67-27bc-4d2c-a646-9667d24b6cb2" name="Default Changelist" comment="" />
-      <created>1577132386042</created>
+      <changelist id="41eb3df1-21e2-46a3-a29c-5886a1dd0c37" name="Default Changelist" comment="" />
+      <created>1577985119634</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1577132386042</updated>
-      <workItem from="1577132392718" duration="8127000" />
-      <workItem from="1577166058692" duration="971000" />
-      <workItem from="1577690192060" duration="598000" />
-      <workItem from="1577690813690" duration="117000" />
-      <workItem from="1577690951680" duration="73000" />
-      <workItem from="1577694213237" duration="2179000" />
-      <workItem from="1577696429018" duration="41000" />
-      <workItem from="1577699921206" duration="2390000" />
+      <updated>1577985119634</updated>
+      <workItem from="1577985139263" duration="12283000" />
     </task>
     <servers />
   </component>
@@ -74,23 +125,32 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <ignored-roots>
-      <path value="$PROJECT_DIR$" />
-    </ignored-roots>
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="351" y="75" key="#Custom_Plugin_Repositories" timestamp="1577690584139">
-      <screen x="0" y="0" width="1440" height="860" />
+    <state x="361" y="63" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1577985910977">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="351" y="75" key="#Custom_Plugin_Repositories/0.0.1440.860@0.0.1440.860" timestamp="1577690584139" />
-    <state x="312" y="91" key="#Notifications" timestamp="1577696448736">
-      <screen x="0" y="0" width="1440" height="860" />
+    <state x="361" y="63" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1577985910977" />
+    <state x="461" y="152" key="#test" timestamp="1577997349507">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="312" y="91" key="#Notifications/0.0.1440.860@0.0.1440.860" timestamp="1577696448736" />
-    <state x="262" y="59" key="SettingsEditor" timestamp="1577696392532">
-      <screen x="0" y="0" width="1440" height="860" />
+    <state x="461" y="152" key="#test/0.0.1536.824@0.0.1536.824" timestamp="1577997349507" />
+    <state x="349" y="130" key="DBNavigator.DatasetFilterDialog" timestamp="1577985447570">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="262" y="59" key="SettingsEditor/0.0.1440.860@0.0.1440.860" timestamp="1577696392532" />
-    <state x="279" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1577132561202" />
+    <state x="349" y="130" key="DBNavigator.DatasetFilterDialog/0.0.1536.824@0.0.1536.824" timestamp="1577985447570" />
+    <state x="299" y="70" key="DBNavigator.ProjectSettingsDialog" timestamp="1577985371059">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="299" y="70" key="DBNavigator.ProjectSettingsDialog/0.0.1536.824@0.0.1536.824" timestamp="1577985371059" />
+    <state x="549" y="170" key="FileChooserDialogImpl" timestamp="1577985197236">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="170" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1577985197236" />
+    <state x="207" y="0" width="1139" height="824" key="SettingsEditor" timestamp="1577986431615">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="207" y="0" width="1139" height="824" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1577986431615" />
   </component>
 </project>

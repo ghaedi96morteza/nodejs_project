@@ -1,6 +1,14 @@
 *{
     font-family: "B Titr";
 }
+.welcome {
+    direction: rtl;
+    width: auto;
+    font-family: "B Titr";
+    font-size: 28px;
+    color: white;
+    padding-right: 10px;
+}
 label,
 textarea {
     align-content: center;
@@ -8,14 +16,13 @@ textarea {
     letter-spacing: 1px;
     padding-top: 20px;
     direction: rtl;
-
 }
-textarea {
+.txtarea{
     font-family: "B Nazanin";
     padding: 10px;
     line-height: 1.5;
     border-radius: 5px;
-    border: 1px solid #06087b;
+    border: 1px solid yellowgreen;
     box-shadow: 1px 1px 1px #999;
     overflow: auto;
     margin-bottom: 20px;
@@ -45,6 +52,7 @@ label {
     justify-content: space-between;
     padding: 10px 10px 50px 10px;
     margin: auto;
+    margin-top: 30px;
 }
 .custom-file-input::-webkit-file-upload-button {
     visibility: hidden;
@@ -107,7 +115,8 @@ label {
     -o-transition: all 0.4s;
     -moz-transition: all 0.4s;
     transition: all 0.4s;
-    margin-top: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .btn:hover {

@@ -196,6 +196,22 @@ iframe {
     color: #666666;
 }
 
+.header{
+    display: block;
+    direction: rtl;
+    text-align: right;
+    background:#00619D;
+    width: 100%;
+}
+.header_txt{
+
+    font-family: B Zar;
+    font-size: 18px;
+    line-height: 1.5;
+    color: white;
+    padding-right: 10px;
+}
+
 
 /*//////////////////////////////////////////////////////////////////
 [ login ]*/
@@ -236,7 +252,7 @@ iframe {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 177px 130px 33px 95px;
+    padding: 100px 130px 33px 95px;
 }
 
 
@@ -294,7 +310,7 @@ iframe {
     z-index: 1;
     margin-bottom: 10px;
 }
-.selectusertype{
+.select_user_type{
     position: relative;
     width: 100%;
     z-index: 1;
@@ -318,7 +334,7 @@ iframe {
     height: 50px;
     border-radius: 25px;
     padding: 0 30px 0 68px;
-    margin :10px,20px,10px,20px
+    margin :auto;
 }
 
 
@@ -385,7 +401,6 @@ iframe {
     padding-left: 28px;
 }
 
-
 /*------------------------------------------------------------------
 [ Button ]*/
 
@@ -429,7 +444,7 @@ iframe {
     background: #333333;
 }
 
-.signup100-form-btn {
+.sign_up100-form-btn {
     font-family: B Titr;
     font-size: 15px;
     line-height: 1.5;
@@ -438,7 +453,7 @@ iframe {
     width: 100%;
     height: 50px;
     border-radius: 25px;
-    background: #c41616;
+    background: navy;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -451,9 +466,10 @@ iframe {
     -o-transition: all 0.4s;
     -moz-transition: all 0.4s;
     transition: all 0.4s;
+    margin-top: 10px;
 }
 
-.signup100-form-btn:hover {
+.sign_up100-form-btn:hover {
     background: #333333;
 }
 

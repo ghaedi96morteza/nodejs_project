@@ -25,7 +25,7 @@
     <show-object-properties value="true" />
     <loaded-nodes>
       <connection connection-id="8e4a6cce-b011-4fb6-bfd8-152241f27915">
-        <schema name="nodejs_project" object-types="function, procedure" />
+        <schema name="nodejs_project" object-types="procedure, function" />
       </connection>
     </loaded-nodes>
   </component>

@@ -5,6 +5,8 @@ const bodyparser = require('body-parser');
 const session = require('express-session');
 const bcrypt = require('bcrypt');
 const DataBase = require('./DataBase/DataBase');
+const fileupload = require('express-fileupload');
+const fs = require('fs');
 
 app.set('view engine', 'hbs');
 app.engine('html', require('hbs').__express);
@@ -16,6 +18,7 @@ app.use(session({
     resave: true,
     saveUninitialized: true
 }));
+app.use(fileupload());
 
 const config = {
     host: 'localhost',
@@ -26,7 +29,7 @@ const config = {
 let sql_query_select = "call selectfromusers (?)";
 let sql_query_insert = 'call insertintousers (?,?,?,?)';
 
-
+// ----------------  method post ------------------------------------------------------------
 app.post('/login', async(request, response) => {
     let login_username = request.body.login_username;
     let login_password = request.body.login_password;
@@ -40,10 +43,10 @@ app.post('/login', async(request, response) => {
             request.session.name = login[0][0].fullname;
             request.session.username = login[0][0].username;
             if(login[0][0].role=='استاد'){
-                response.redirect('/inst_page');
+                response.redirect('/post_page');
             }
             else if (login[0][0].role=='دانشجو'){
-                response.redirect('/std_page');
+                response.redirect('/');
             }
 
         } else {
@@ -87,6 +90,24 @@ app.post('/signup', async(request, response) => {
     }
     response.end();
 });
+app.post('/post', async (request, response)=>{
+    let post_body = request.body.post_body;
+    let post_file = request.files.post_file;
+    fs.mkdir('files/'+request.session.username,(err)=>{
+        if (err){console.log(err);}
+    });
+    post_file.mv('files/'+request.session.username+'/'+post_file.name,(err)=>{
+        if (err){console.log(err);}
+        else{
+            let post_file_path = 'files/'+request.session.username+'/'+post_file.name;
+        }
+        console.log(post_body);
+        response.end();
+    });
+});
+// -------------------------------------------------------------------------------------
+
+// ------------- renders --------------------------------------------------------------
 app.get('/', (req, res) => {
     res.redirect('/home');
 });
@@ -115,20 +136,9 @@ app.get('/signup', (req, res) => {
 //-----------------------------------------
 
 app.get('/post', (req, res) => {
-    res.render('post.html', {
+    res.render('post_page.html', {
         title: 'صفحه ثبت پست'
     });
 });
-
-app.get('/posts', (req, res) => {
-    res.render('posts.html', {
-        title: 'صفحه ثبت پست'
-    });
-});
-
-app.get('/comments', (req, res) => {
-    res.render('comments.html', {
-        title: 'صفحه ثبت نظر'
-    });
-});
+// --------------------------------------------------------------------------
 app.listen(80);

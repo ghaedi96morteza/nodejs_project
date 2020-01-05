@@ -2,46 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41eb3df1-21e2-46a3-a29c-5886a1dd0c37" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/nodejs_project.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Project.iml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/files/ali/santa.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/post_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bcrypt/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bcrypt/.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bcrypt/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bcrypt/.travis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bcrypt/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bcrypt/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bcrypt/ISSUE_TEMPLATE.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bcrypt/ISSUE_TEMPLATE.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bcrypt/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bcrypt/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bcrypt/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bcrypt/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bcrypt/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bcrypt/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bcrypt/bcrypt.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bcrypt/bcrypt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bcrypt/binding.gyp" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bcrypt/binding.gyp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bcrypt/examples/async_compare.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bcrypt/examples/async_compare.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bcrypt/examples/forever_gen_salt.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bcrypt/examples/forever_gen_salt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bcrypt/lib/binding/bcrypt_lib.node" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bcrypt/lib/binding/bcrypt_lib.node" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bcrypt/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bcrypt/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bcrypt/promises.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bcrypt/promises.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bcrypt/src/bcrypt.cc" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bcrypt/src/bcrypt.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bcrypt/src/bcrypt_node.cc" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bcrypt/src/bcrypt_node.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bcrypt/src/blowfish.cc" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bcrypt/src/blowfish.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bcrypt/src/node_blf.h" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bcrypt/src/node_blf.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/posts.less" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/posts.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/post.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/posts.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/posts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/post.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/post.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/posts.less" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/comments.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/home_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/home_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/inst_page.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/views/login_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/login_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/post.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/posts.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/std_page.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/test.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +41,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -87,6 +60,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="ToolWindowJob Explorer.ShowToolbar" value="false" />
@@ -118,6 +92,7 @@
       <option name="presentableId" value="Default" />
       <updated>1577985119634</updated>
       <workItem from="1577985139263" duration="12283000" />
+      <workItem from="1578194228273" duration="11771000" />
     </task>
     <servers />
   </component>
@@ -152,5 +127,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="207" y="0" width="1139" height="824" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1577986431615" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1578206179214">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1578206179214" />
   </component>
 </project>

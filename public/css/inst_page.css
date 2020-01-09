@@ -9,15 +9,13 @@
     color: white;
     padding-right: 10px;
 }
-label,
-textarea {
+
+.txtarea {
     align-content: center;
     font-size: 14pt;
     letter-spacing: 1px;
     padding-top: 20px;
     direction: rtl;
-}
-.txtarea{
     font-family: "B Nazanin";
     padding: 10px;
     line-height: 1.5;

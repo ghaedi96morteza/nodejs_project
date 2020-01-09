@@ -30,14 +30,11 @@
 </head>
 <body>
 <div class="wrap-main">
-<p align="center" class="welcome">استاد گرامی "{{name}}" خوش آمدید.</p>
+    <p align="center" class="welcome">دانشجوی گرامی "{{name}}" خوش آمدید.</p>
     <div align="center" class="wrap">
-        <input class="txtarea" type="text" form="post" name="post_title" placeholder="عنوان : " required><br>
-        <textarea class="txtarea" lang="fa" id="post_body" form="post" name="post_body"
-                  rows="5" cols="33" placeholder="متن خود را وارد کنید ..." required></textarea>
-
-        <form name="post" id="post" action="/post" method="post" enctype="multipart/form-data">
-            <input class="custom-file-input" type="file" name="post_file" required/><br>
+        <textarea class="txtarea" lang="fa" id="comment_body" form="comment" name="comment_body"
+                  rows="5" cols="33" placeholder="نظر خود را وارد کنید ..." required></textarea>
+        <form name="comment" id="comment" action="/comment" method="post" enctype="multipart/form-data">
             <button class="btn" type="submit">ارسال</button>
             <div class="text-center p-t-40">
                 <a class="txt2" href="/">

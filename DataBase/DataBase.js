@@ -1,6 +1,13 @@
 const mysql = require('mysql');
+
+const config = {
+    host: 'localhost',
+    user: 'root',
+    password: 'mysql',
+    database: 'nodejs_project'
+};
 module.exports = class DataBase {
-    constructor(config) {
+    constructor() {
         this.connection = mysql.createConnection(config);
     }
     query (sql,args){

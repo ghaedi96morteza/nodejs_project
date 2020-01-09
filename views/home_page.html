@@ -3,25 +3,91 @@
 
 <head>
     <title>{{title}}</title>
-    <link rel="stylesheet" type="text/css" href="css/util.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 
 <body>
-<div class="header">
-    <ul>
-        <li>
-            <a class="header_txt" href="/login">
-                صفحه ورود
-            </a>
-        </li>
-        <li>
-            <a class="header_txt" href="/">
-                نمایش تمام مطالب
-            </a>
-        </li>
-    </ul>
-</div>
+    <div class="header">
+        <ul>
+            <li>
+                <a class="header_txt" href="/login">
+                    صفحه ورود
+                </a>
+            </li>
+            <li>
+                <a class="header_txt" href="/">
+                    نمایش تمام مطالب
+                </a>
+            </li>
+
+            <li>
+                <a class="header_txt" href="/inst_page">
+                    ایجاد مطلب جدید
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <p style="display: none" id="d01">{{dir01}}</p>
+                <p style="display: none" id="i01">{{id01}}</p>
+                <h2>{{title01}}</h2>
+                <p>{{body01}}</p>
+                <a class="header_txt2" href="" id="dir01" download="">دانلود فایل</a><br>
+                <p>نگارنده: {{author01}} </p><br><br>
+                <a class="header_txt2"  href="" id="comment01">نظر دهید</a><br>
+                <a class="header_txt2"  href="" id="show_comment01">مشاهده نظرات</a><br>
+                <script>
+                    let dir01 = document.getElementById("d01").innerText;
+                    document.getElementById("dir01").href = dir01;
+                    let id01 = document.getElementById("i01").innerText;
+                    document.getElementById("comment01").href ="/comment_page?" +id01;
+                    document.getElementById("show_comment01").href ="/show_comments?" + id01;
+                </script>
+
+            </div>
+            <div class="card">
+                <p style="display: none" id="d02">{{dir02}}</p>
+                <p style="display: none" id="i02">{{id02}}</p>
+                <h2>{{title02}}</h2>
+                <p>{{body02}}</p>
+                <a class="header_txt2" href="" id="dir02" download="">دانلود فایل</a><br>
+                <p>نگارنده: {{author02}} </p><br><br>
+                <a class="header_txt2" href="" id="comment02">نظر دهید</a><br>
+                <a class="header_txt2"  href="" id="show_comment02">مشاهده نظرات</a><br>
+                <script>
+                    let dir02 = document.getElementById("d02").innerText;
+                    document.getElementById("dir02").href = dir02;
+                    let id02 = document.getElementById("i02").innerText;
+                    document.getElementById("comment02").href ="/comment_page?" +id02;
+                    document.getElementById("show_comment02").href ="/show_comments?" + id02;
+                </script>
+
+            </div>
+            <div class="card">
+                <p style="display: none;" id="d03">{{dir03}}</p>
+                <p style="display: none;" id="i03">{{id03}}</p>
+                <h2>{{title03}}</h2>
+                <p>{{body03}}</p>
+                <a class="header_txt2" href="" id="dir03" download="">دانلود فایل</a><br>
+                <p>نگارنده: {{author03}} </p><br><br>
+                <a class="header_txt2" href="" id="comment03">نظر دهید</a><br>
+                <a class="header_txt2"  href="" id="show_comment03">مشاهده نظرات</a><br>
+                <script>
+                    let dir03 = document.getElementById("d03").innerText;
+                    document.getElementById("dir03").href = dir03;
+                    let id03 = document.getElementById("i03").innerText;
+                    document.getElementById("comment03").href ="/comment_page?" +id03;
+                    document.getElementById("show_comment03").href ="/show_comments?" + id03;
+                </script>
+
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

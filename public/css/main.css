@@ -194,22 +194,8 @@ iframe {
     font-size: 18px;
     line-height: 1.5;
     color: #666666;
-}
+    margin-bottom: 20px;
 
-.header{
-    display: block;
-    direction: rtl;
-    text-align: right;
-    background:#00619D;
-    width: 100%;
-}
-.header_txt{
-
-    font-family: B Zar;
-    font-size: 18px;
-    line-height: 1.5;
-    color: white;
-    padding-right: 10px;
 }
 
 

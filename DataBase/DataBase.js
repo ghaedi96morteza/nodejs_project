@@ -3,7 +3,7 @@ const mysql = require('mysql');
 const config = {
     host: 'localhost',
     user: 'root',
-    password: 'mysql',
+    password: '',
     database: 'nodejs_project'
 };
 module.exports = class DataBase {

@@ -1,4 +1,9 @@
 # nodejs_project
-created by :
-Morteza Ghaedi 
-9512151046
+
+created by : Morteza Ghaedi
+  std-code : 9512151046
+
+
+********************************************
+Read doc.pdf for informations
+********************************************

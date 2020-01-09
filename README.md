@@ -1,7 +1,14 @@
 # nodejs_project
-
+////////////////////
 created by : Morteza Ghaedi
   std-code : 9512151046
+////////////////////
+
+/************ 
+username and passwords use in database:
+reza : 12345 =>دانشجو
+hamid: 12345 =>استاد
+/************
 ----------------------------------------
 git address : https://github.com/ghaedi96morteza/nodejs_project.git
 ----------------------------------------

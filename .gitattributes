@@ -1,2 +1,2 @@
 public/* linguist-vendored
-*.css linguist-language=Html
+*.css linguist-vendored=false

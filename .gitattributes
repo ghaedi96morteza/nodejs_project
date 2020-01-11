@@ -1,4 +1,6 @@
 * text=auto
+public/* linguist-vendored
+viwes/* linguist-vendored
 *.css linguist-vendored
 *.scss linguist-vendored
 *.html linguist-vendored

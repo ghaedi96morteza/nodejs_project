@@ -1,2 +1,4 @@
-*.css linguist-detectable=false
-*.js linguist-detectable=true
+* text=auto
+*.css linguist-vendored
+*.scss linguist-vendored
+*.html linguist-vendored
